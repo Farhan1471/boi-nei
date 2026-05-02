@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
@@ -16,28 +17,25 @@ const Navbar = () => {
           />
         </div>
 
-        <ul className="flex items-center gap-5 text-sm">
-          <li>Home
-            {/* <Link href={"/"}>Home</Link> */}
-          </li>
-          <li>All Books
-            {/* <Link href={"/all-photos"}>All Photos</Link> */}
-          </li>
-          <li>My Profile
-            {/* <Link href={"/pricing"}>Pricing</Link> */}
+        <ul className="flex items-center gap-5 text-sm font-semibold">
+          <li>
+            <Link href="/">Home</Link>
           </li>
           <li>
-            {/* <Link href={"/profile"}>Profile</Link> */}
+            <Link href="/all-books">All Books</Link>
+          </li>
+          <li>
+            <Link href="/profile">My Profile</Link>
           </li>
         </ul>
 
         <div className="flex gap-4">
-            <ul className="flex items-center  text-sm gap-5">
+            <ul className="flex items-center font-semibold text-sm gap-5">
               <li>
-                {/* <Link href={"/signup"}>SignUp</Link> */}
+                <Link href={"/signup"}>SignUp</Link>
               </li>
               <li>
-                {/* <Link href={"/signin"}>SignIn</Link> */}
+                <Link href={"/signin"}>SignIn</Link>
               </li>
             </ul>
 

@@ -6,7 +6,7 @@
     "description": "A mysterious story of a forest where people hear whispers that change their fate.",
     "category": "Story",
     "available_quantity": 5,
-    "image_url": "https://picsum.photos/id/1011/300/400"
+    "image_url": "https://picsum.photos/id/1011/300/400.jpg"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "description": "A beginner-friendly guide to understanding JavaScript fundamentals and concepts.",
     "category": "Tech",
     "available_quantity": 8,
-    "image_url": "https://picsum.photos/id/180/300/400"
+    "image_url": "https://picsum.photos/id/180/300/400.jpg"
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "description": "Explore the mysteries of the universe, galaxies, and black holes.",
     "category": "Science",
     "available_quantity": 6,
-    "image_url": "https://picsum.photos/id/1003/300/400"
+    "image_url": "https://picsum.photos/id/1003/300/400.jpg"
   },
   {
     "id": 4,
@@ -33,7 +33,7 @@
     "description": "A time-travel story where a young boy gets trapped in different centuries.",
     "category": "Story",
     "available_quantity": 4,
-    "image_url": "https://picsum.photos/id/1025/300/400"
+    "image_url": "https://picsum.photos/id/1025/300/400.jpg"
   },
   {
     "id": 5,
@@ -42,7 +42,7 @@
     "description": "An easy introduction to Python programming with practical examples.",
     "category": "Tech",
     "available_quantity": 10,
-    "image_url": "https://picsum.photos/id/0/300/400"
+    "image_url": "https://picsum.photos/id/0/300/400.jpg"
   },
   {
     "id": 6,
@@ -51,7 +51,7 @@
     "description": "Understand how the brain works and controls human behavior.",
     "category": "Science",
     "available_quantity": 7,
-    "image_url": "https://picsum.photos/id/1062/300/400"
+    "image_url": "https://picsum.photos/id/1062/300/400.jpg"
   },
   {
     "id": 7,
@@ -60,7 +60,7 @@
     "description": "A thrilling story about a hidden treasure beneath a quiet river.",
     "category": "Story",
     "available_quantity": 3,
-    "image_url": "https://picsum.photos/id/1015/300/400"
+    "image_url": "https://picsum.photos/id/1015/300/400.jpg"
   },
   {
     "id": 8,
@@ -69,7 +69,7 @@
     "description": "Learn HTML, CSS, and JavaScript to build modern websites.",
     "category": "Tech",
     "available_quantity": 9,
-    "image_url": "https://picsum.photos/id/1070/300/400"
+    "image_url": "https://picsum.photos/id/1070/300/400.jpg"
   },
   {
     "id": 9,
@@ -78,7 +78,7 @@
     "description": "A simplified explanation of quantum physics concepts for beginners.",
     "category": "Science",
     "available_quantity": 5,
-    "image_url": "https://picsum.photos/id/1050/300/400"
+    "image_url": "https://picsum.photos/id/1050/300/400.jpg"
   },
   {
     "id": 10,
@@ -87,7 +87,7 @@
     "description": "A group of friends experience strange events during a night trip.",
     "category": "Story",
     "available_quantity": 6,
-    "image_url": "https://picsum.photos/id/1040/300/400"
+    "image_url": "https://picsum.photos/id/1040/300/400.jpg"
   },
   {
     "id": 11,
@@ -96,7 +96,7 @@
     "description": "Build scalable backend applications using Node.js and modern tools.",
     "category": "Tech",
     "available_quantity": 7,
-    "image_url": "https://picsum.photos/id/103/300/400"
+    "image_url": "https://picsum.photos/id/103/300/400.jpg"
   },
   {
     "id": 12,
@@ -105,6 +105,6 @@
     "description": "An overview of climate change and its impact on the planet.",
     "category": "Science",
     "available_quantity": 4,
-    "image_url": "https://picsum.photos/id/1016/300/400"
+    "image_url": "https://picsum.photos/id/1016/300/400.jpg"
   }
 ]

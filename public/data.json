@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "title": "The Silent Forest",
+    "author": "A. Rahman",
+    "description": "A mysterious story of a forest where people hear whispers that change their fate.",
+    "category": "Story",
+    "available_quantity": 5,
+    "image_url": "https://picsum.photos/id/1011/300/400"
+  },
+  {
+    "id": 2,
+    "title": "JavaScript Basics",
+    "author": "M. Karim",
+    "description": "A beginner-friendly guide to understanding JavaScript fundamentals and concepts.",
+    "category": "Tech",
+    "available_quantity": 8,
+    "image_url": "https://picsum.photos/id/180/300/400"
+  },
+  {
+    "id": 3,
+    "title": "Space and Beyond",
+    "author": "N. Islam",
+    "description": "Explore the mysteries of the universe, galaxies, and black holes.",
+    "category": "Science",
+    "available_quantity": 6,
+    "image_url": "https://picsum.photos/id/1003/300/400"
+  },
+  {
+    "id": 4,
+    "title": "Lost in Time",
+    "author": "S. Ahmed",
+    "description": "A time-travel story where a young boy gets trapped in different centuries.",
+    "category": "Story",
+    "available_quantity": 4,
+    "image_url": "https://picsum.photos/id/1025/300/400"
+  },
+  {
+    "id": 5,
+    "title": "Python for Beginners",
+    "author": "R. Hasan",
+    "description": "An easy introduction to Python programming with practical examples.",
+    "category": "Tech",
+    "available_quantity": 10,
+    "image_url": "https://picsum.photos/id/0/300/400"
+  },
+  {
+    "id": 6,
+    "title": "The Human Brain",
+    "author": "T. Chowdhury",
+    "description": "Understand how the brain works and controls human behavior.",
+    "category": "Science",
+    "available_quantity": 7,
+    "image_url": "https://picsum.photos/id/1062/300/400"
+  },
+  {
+    "id": 7,
+    "title": "River of Secrets",
+    "author": "F. Hossain",
+    "description": "A thrilling story about a hidden treasure beneath a quiet river.",
+    "category": "Story",
+    "available_quantity": 3,
+    "image_url": "https://picsum.photos/id/1015/300/400"
+  },
+  {
+    "id": 8,
+    "title": "Web Development Guide",
+    "author": "K. Uddin",
+    "description": "Learn HTML, CSS, and JavaScript to build modern websites.",
+    "category": "Tech",
+    "available_quantity": 9,
+    "image_url": "https://picsum.photos/id/1070/300/400"
+  },
+  {
+    "id": 9,
+    "title": "Quantum Physics Simplified",
+    "author": "L. Roy",
+    "description": "A simplified explanation of quantum physics concepts for beginners.",
+    "category": "Science",
+    "available_quantity": 5,
+    "image_url": "https://picsum.photos/id/1050/300/400"
+  },
+  {
+    "id": 10,
+    "title": "Night Adventure",
+    "author": "D. Sarker",
+    "description": "A group of friends experience strange events during a night trip.",
+    "category": "Story",
+    "available_quantity": 6,
+    "image_url": "https://picsum.photos/id/1040/300/400"
+  },
+  {
+    "id": 11,
+    "title": "Node.js in Action",
+    "author": "J. Paul",
+    "description": "Build scalable backend applications using Node.js and modern tools.",
+    "category": "Tech",
+    "available_quantity": 7,
+    "image_url": "https://picsum.photos/id/103/300/400"
+  },
+  {
+    "id": 12,
+    "title": "Climate Change Effects",
+    "author": "P. Sen",
+    "description": "An overview of climate change and its impact on the planet.",
+    "category": "Science",
+    "available_quantity": 4,
+    "image_url": "https://picsum.photos/id/1016/300/400"
+  }
+]

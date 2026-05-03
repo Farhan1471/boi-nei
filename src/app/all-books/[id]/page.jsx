@@ -1,3 +1,4 @@
+import { Button } from "@heroui/react";
 import React from "react";
 
 const BookDetailsPage = async ({params}) => {
@@ -9,11 +10,25 @@ const BookDetailsPage = async ({params}) => {
     const book = books.find(b => b.id == id);
 
     return(
-        <div>
-            <h1>{book.title}</h1>
-            <p>{book.author}</p>
-            <img src={book.image_url} alt={book.title} />
-            <p>{book.description}</p>
+        <div className="flex justify-between gap-10 mt-8">
+            <div>
+                <img src={book.image_url} fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    alt={book.title}
+                    className="object-cover rounded-xl" />
+            </div>
+
+            <div>
+                <h1 className="font-semibold text-2xl">{book.title}</h1>
+                <p className=""><i>{book.author}</i></p>
+                <p>{book.available_quantity} copies left</p>
+
+                <p>Description</p>
+                <p>{book.description}</p>
+
+                <Button variant="primary" className="mt-4 w-[50%]">Borrow</Button>
+            </div>
+            
         </div>
     )
 }

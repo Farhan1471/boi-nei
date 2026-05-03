@@ -8,8 +8,8 @@ const FeaturedBooks = async () => {
     const topBooks = books.slice(0, 4);
 
     return(
-        <div>
-            <h2 className="text-2xl font-bold mb-4">Featured Books</h2>
+        <div className="mt-8">
+            <h2 className="text-2xl font-semibold text-center mb-6">Featured Books</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 {topBooks.map(book => <BookCard key={book.id} book={book} />)}
             </div>

@@ -23,7 +23,7 @@ const BookCard = ({book}) =>{
                 <p className="text-sm text-gray-600">{book.author}</p>
             </div>
 
-            <Link href={`/all-books/${book.id}`}><Button>View Details</Button></Link>
+            <Link href={`/all-books/${book.id}`}><Button className="w-full bg-[#697BAE] text-white hover:bg-[#5a6796]">View Details</Button></Link>
             
         </Card>
     )

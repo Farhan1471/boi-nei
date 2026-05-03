@@ -4,41 +4,51 @@ import Image from "next/image";
 import Link from "next/link";
 import { authClient } from "@/lib/auth-client";
 import { Button } from "@heroui/react";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
 
   const userData = authClient.useSession()
   const user = userData.data?.user
   const userName = user?.name
-  // console.log(user)
 
   const handleLogout = async () => {
     await authClient.signOut()
   }
 
+  const pathname = usePathname()
+
   return (
     <div className="border-b px-2">
       <nav className=" flex justify-between items-center  py-3 max-w-7xl mx-auto w-full">
         <div className="flex gap-2 items-center">
-          <Image
-            src={"/logo.png"}
-            alt="logo"
-            loading="eager"
-            width={100}
-            height={100}
-            className="object-cover h-auto w-auto"
-          />
+          <Link href={"/"}>
+            <Image
+              src={"/logo.png"}
+              alt="logo"
+              loading="eager"
+              width={100}
+              height={100}
+              className="object-cover h-auto w-auto"
+            />
+          </Link>
         </div>
 
-        <ul className="flex items-center gap-5 text-sm font-semibold">
+        <ul className="flex items-center gap-5 font-semibold">
           <li>
-            <Link href="/">Home</Link>
+            <Link href="/" className={pathname === "/" ? "text-[#697BAE]" : "text-black"}>
+              Home
+            </Link>
           </li>
           <li>
-            <Link href="/all-books">All Books</Link>
+            <Link href="/all-books" className={pathname === "/all-books" ? "text-[#697BAE]" : "text-black"}>
+              All Books
+            </Link>
           </li>
           <li>
-            <Link href="/profile">My Profile</Link>
+            <Link href="/profile" className={pathname === "/profile" ? "text-[#697BAE]" : "text-black"}>
+              My Profile
+            </Link>
           </li>
         </ul>
 
@@ -53,7 +63,7 @@ const Navbar = () => {
             </ul>}
             {
               user && <div className="flex items-center gap-3">
-                <span>{userName}</span>
+                <span className="font-semibold text-green-600">{userName}</span>
                 <Button variant="danger-soft" onClick={handleLogout}>
                   Logout
                 </Button>

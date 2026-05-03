@@ -1,28 +1,33 @@
 import React from "react";
 import Image from "next/image";
+import { Button } from "@heroui/react";
 
 
 const Banner = () => {
     return(
-        <div className="bg-[url('https://i.pinimg.com/1200x/8a/fe/83/8afe83b98f339de4c1dd34fde26a86d0.jpg')] h-[60vh] w-full bg-cover bg-no-repeat bg-center flex items-center rounded-lg shadow-2xl">
-      {/* Overlay */}
-      <div className="w-full h-full rounded-lg bg-black/50 flex items-center ">
-        <div className="max-w-7xl mx-auto px-6 text-white">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 max-w-2xl">
-            Find Your Next Read
-          </h1>
-          <p className="text-lg md:text-xl mb-6 max-w-xl text-gray-200">
-            Discover your next favorite book with our personalized recommendations.
+      <div className="mx-auto flex justify-center items-center min-h-[80vh] w-full px-4 gap-8 lg:gap-10 lg:px-8 py-10 mt-5 sm:flex-row flex-col-reverse">
+        {/* Left Side */}
+        <div className="w-full text-center lg:text-left lg:w[50%]">
+          <h1 className="text-6xl font-extrabold mb-4">Find Your <br /> Next Read</h1>
+          <p className="mx-auto max-w-xl text-gray-600 lg:mx-0">
+            Explore our curated archive of human knowledge. From timeless classics to the cutting edge of technology and science, your next discovery awaits in the digital halls of ScholasticArch.
           </p>
+          <Button variant="solid" className="border-2 border-[#697BAE] text-[#697BAE] mt-6 rounded-full w-[40%] hover:opacity-90 hover:bg-[#697BAE] hover:text-white transition duration-300">
+            Browse Now
+          </Button>
+        </div>
 
-          <div className="flex gap-4">
-            <button className="bg-green-600 text-white py-2 px-4 rounded-lg hover:opacity-90">
-              Explore Now
-            </button>
-          </div>
+        {/* Right Side */}
+        <div className="w-full max-w-md lg:w-[60%] lg:mx-w-none">
+          <Image
+            src="/hero.svg"
+            alt="Hero"
+            width={500}
+            height={300}
+            className="object-contain h-auto w-full"
+          />
         </div>
       </div>
-    </div>
     )
 }
 

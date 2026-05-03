@@ -20,7 +20,7 @@ const Navbar = () => {
 
   return (
     <div className="border-b px-2">
-      <nav className=" flex justify-between items-center  py-3 max-w-7xl mx-auto w-full">
+      <nav className=" flex flex-col md:flex-row justify-between items-center py-3 max-w-7xl gap-4 mx-auto w-full">
         <div className="flex gap-2 items-center">
           <Link href={"/"}>
             <Image
@@ -34,7 +34,7 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <ul className="flex items-center gap-5 font-semibold">
+        <ul className="flex flex-col md:flex-row items-center gap-3 md:gap-5 font-semibold">
           <li>
             <Link href="/" className={pathname === "/" ? "text-[#697BAE]" : "text-black"}>
               Home
@@ -52,7 +52,7 @@ const Navbar = () => {
           </li>
         </ul>
 
-        <div className="flex gap-4">
+        <div className="flex flex-col md:flex-row gap-2 md:gap-4">
             {!user && <ul className="flex items-center font-semibold text-sm gap-5">
               <li>
                 <Link href={"/signup"} className={pathname === "/signup" ? "text-[#697BAE]" : "text-black"}>

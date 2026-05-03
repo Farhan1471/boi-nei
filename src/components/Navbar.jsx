@@ -55,10 +55,10 @@ const Navbar = () => {
         <div className="flex gap-4">
             {!user && <ul className="flex items-center font-semibold text-sm gap-5">
               <li>
-                <Link href={"/signup"}>SignUp</Link>
+                <Link href={"/signup"}>Register</Link>
               </li>
               <li>
-                <Link href={"/signin"}>SignIn</Link>
+                <Link href={"/signin"}>Login</Link>
               </li>
             </ul>}
             {

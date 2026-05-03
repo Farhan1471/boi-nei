@@ -1,6 +1,6 @@
 "use client";
 import { authClient } from "@/lib/auth-client";
-// import { Check } from "@gravity-ui/icons";
+import { FcGoogle } from "react-icons/fc";
 import {
   Button,
   Card,
@@ -11,6 +11,7 @@ import {
   Label,
   TextField,
 } from "@heroui/react";
+import Link from "next/link";
 
 import { useRouter } from "next/navigation";
 
@@ -37,25 +38,33 @@ export default function SignUpPage() {
     console.log({data, error})
 
     if(!error) {
-        router.push('/')
+      await authClient.signOut()
+      router.push('/signin')
     }
 
-  };
 
+
+  };
+      const handleGoogleSignIn = async () => {
+        await authClient.signIn.social({
+            provider: 'google'
+        })
+      }
+      
   return (
     <Card className="border mx-auto w-125 py-10 mt-5">
-      <h1 className="text-center text-2xl font-bold">Sign Up</h1>
+      <h1 className="text-center text-2xl font-bold">User Registration Page</h1>
 
       <Form className="flex w-96 mx-auto flex-col gap-4" onSubmit={onSubmit}>
         <TextField isRequired name="name" type="text">
           <Label>Name</Label>
-          <Input placeholder="Enter your name" />
+          <Input className="rounded-lg border-2 border-gray-400 p-2" placeholder="Enter your name" />
           <FieldError />
         </TextField>
 
         <TextField isRequired name="image" type="text">
           <Label>Image URL</Label>
-          <Input placeholder="Image URL" />
+          <Input className="rounded-lg border-2 border-gray-400 p-2" placeholder="Image URL" />
           <FieldError />
         </TextField>
 
@@ -72,7 +81,7 @@ export default function SignUpPage() {
           }}
         >
           <Label>Email</Label>
-          <Input placeholder="john@example.com" />
+          <Input className="rounded-lg border-2 border-gray-400 p-2" placeholder="user@example.com" />
           <FieldError />
         </TextField>
 
@@ -96,7 +105,7 @@ export default function SignUpPage() {
           }}
         >
           <Label>Password</Label>
-          <Input placeholder="Enter your password" />
+          <Input className="rounded-lg border-2 border-gray-400 p-2" placeholder="Enter your password" />
           <Description>
             Must be at least 8 characters with 1 uppercase and 1 number
           </Description>
@@ -105,15 +114,21 @@ export default function SignUpPage() {
 
         <div className="flex gap-2">
           <Button type="submit">
-            {/* <Check /> */}
-            Submit
+            Register
           </Button>
-          <Button type="reset" variant="secondary">
+          <Button type="reset" variant="outline">
             Reset
           </Button>
         </div>
+
+        <Link href="/signin" className="text-center text-sm text-blue-500">
+          Already have an account? Sign In
+        </Link>
       </Form>
 
+      <p className="text-center">Or</p>
+
+      <Button onClick={handleGoogleSignIn} variant="outline" className={'w-full'}><FcGoogle /> SignIn with Google</Button>
 
     </Card>
   );

@@ -10,16 +10,18 @@ export function UpdateUserInfo() {
     const name = e.target.name.value;
     const image = e.target.image.value;
 
-    await authClient.updateUser({
-        name,
-        image
-    })
+    const updateData = {name}
 
-    
+    if(image.trim()){
+        updateData.image = image.trim()
+    }
+
+    await authClient.updateUser(updateData)
   };
+
   return (
     <Modal>
-      <Button variant="secondary">
+      <Button className="w-full" variant="secondary" >
         Update Profile
       </Button>
       <Modal.Backdrop>
@@ -27,9 +29,6 @@ export function UpdateUserInfo() {
           <Modal.Dialog className="sm:max-w-md">
             <Modal.CloseTrigger />
             <Modal.Header>
-              <Modal.Icon className="bg-accent-soft text-accent-soft-foreground">
-                
-              </Modal.Icon>
               <Modal.Heading>Update User Information</Modal.Heading>
             </Modal.Header>
             <Modal.Body className="p-6">

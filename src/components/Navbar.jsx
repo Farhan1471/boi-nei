@@ -55,10 +55,14 @@ const Navbar = () => {
         <div className="flex gap-4">
             {!user && <ul className="flex items-center font-semibold text-sm gap-5">
               <li>
-                <Link href={"/signup"}>Register</Link>
+                <Link href={"/signup"} className={pathname === "/signup" ? "text-[#697BAE]" : "text-black"}>
+                  Register
+                </Link>
               </li>
               <li>
-                <Link href={"/signin"}>Login</Link>
+                <Link href={"/signin"} className={pathname === "/signin" ? "text-[#697BAE]" : "text-black"}>
+                  Login
+                </Link>
               </li>
             </ul>}
             {

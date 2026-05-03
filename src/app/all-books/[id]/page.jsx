@@ -12,7 +12,7 @@ const BookDetailsPage = async ({params}) => {
     return(
         <div className="flex justify-between gap-10 mt-8">
             <div>
-                <img src={book.image_url} fill
+                <img src={book.image_url}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     alt={book.title}
                     className="object-cover rounded-xl" />

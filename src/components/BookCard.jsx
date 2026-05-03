@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const BookCard = ({book}) =>{
     return(
-        <Card className="border rounded-xl h-full p-4 flex-col">
+        <Card className="border rounded-xl p-4 flex flex-col min-h-[350px]">
             <div className="relative w-full aspect-square">
                 <Image
                     src={book.image_url}

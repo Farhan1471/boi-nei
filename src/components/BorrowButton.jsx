@@ -11,10 +11,10 @@ const BorrowButton =() => {
     const user = data?.user
 
     const handleBorrow = () => {
-        if(!user){
-            router.push("/signin");
-            return;
-        }
+        // if(!user){
+        //     router.push("/signin");
+        //     return;
+        // }
 
         toast.success("Book borrowed successfully!")
     }

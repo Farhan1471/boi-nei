@@ -55,7 +55,7 @@ const AllBooksPage = ({searchParams}) => {
                 onSearch={handleSearch}
             />
 
-            <div className="grid grid-cols-1 md:grid-cols-5 gap-5 mt-8">
+            <div className="grid grid-cols-1 lg:grid-cols-5 md:grid-cols-3 gap-5 mt-8">
                 <div>
                     <Category activeCategory={category} />
                 </div>

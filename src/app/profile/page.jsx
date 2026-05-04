@@ -3,6 +3,7 @@ import { UpdateUserInfo } from "@/components/UpdateUserInfo";
 import { authClient } from "@/lib/auth-client";
 import { Card } from "@heroui/react";
 import React from "react";
+import 'animate.css';
 
 const ProfilePage = () => {
 
@@ -12,7 +13,7 @@ const ProfilePage = () => {
     return(
         <div className="my-12">
             <Card>
-                <h1 className="text-2xl font-bold">My Profile</h1>
+                <h1 className="text-2xl font-bold text-center animate__animated animate__bounce animate__delay-2s">My Profile</h1>
 
                 {user?.image? (<img src={user?.image} alt="Profile Image" className="w-32 h-32 mx-auto rounded-full object-cover" />
                     ) : 

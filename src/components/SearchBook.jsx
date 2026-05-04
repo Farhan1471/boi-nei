@@ -11,7 +11,7 @@ export default function Search() {
     const [searchedBooks, setSearchedBooks] = useState([]);
 
     useEffect(() => {
-        fetch('https://ame.scratchive.com/data.json')
+        fetch('https://boi-nei.vercel.app/data.json')
             .then(res => res.json())
             .then(data => {
                 console.log(data); 

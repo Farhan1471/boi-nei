@@ -7,7 +7,7 @@ import React from "react";
 const AllBooksPage = async ({searchParams}) => {
     const {category} = await searchParams;
 
-    const res = await fetch('https://ame.scratchive.com/data.json');
+    const res = await fetch('https://boi-nei.vercel.app/data.json');
     const books = await res.json();
 
      const filteredBooks = category ? books.filter(book => book.category.toLowerCase() == category.toLowerCase()) : books

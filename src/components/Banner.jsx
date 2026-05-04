@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { Button } from "@heroui/react";
+import Link from "next/link";
 
 
 const Banner = () => {
@@ -12,9 +13,11 @@ const Banner = () => {
           <p className="mx-auto max-w-xl text-gray-600 lg:mx-0">
             Explore our curated archive of human knowledge. From timeless classics to the cutting edge of technology and science, your next discovery awaits in the digital halls of ScholasticArch.
           </p>
-          <Button variant="solid" className="border-2 border-[#697BAE] text-[#697BAE] mt-6 rounded-full w-[40%] hover:opacity-90 hover:bg-[#697BAE] hover:text-white transition duration-300">
-            Browse Now
-          </Button>
+          <Link href="/all-books">
+            <Button variant="solid" className="border-2 border-[#697BAE] text-[#697BAE] mt-6 rounded-full w-[40%] hover:opacity-90 hover:bg-[#697BAE] hover:text-white transition duration-300">
+              Browse Now
+            </Button>
+          </Link>
         </div>
 
         {/* Right Side */}

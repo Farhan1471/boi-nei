@@ -1,4 +1,5 @@
-import { Button } from "@heroui/react";
+import BorrowButton from "@/components/BorrowButton";
+import { ToastContainer } from "react-toastify";
 import React from "react";
 
 const BookDetailsPage = async ({params}) => {
@@ -26,9 +27,9 @@ const BookDetailsPage = async ({params}) => {
                 <p>Description</p>
                 <p>{book.description}</p>
 
-                <Button variant="primary" className="mt-4 w-[50%]">Borrow</Button>
+                <BorrowButton />
             </div>
-            
+            <ToastContainer />
         </div>
     )
 }

@@ -2,14 +2,15 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { authClient } from "@/lib/auth-client";
+
 import { Button } from "@heroui/react";
 import { usePathname } from "next/navigation";
+import { useSession, authClient } from "@/lib/auth-client";
 
 const Navbar = () => {
 
-  const userData = authClient.useSession()
-  const user = userData.data?.user
+  const {data, isPending} = useSession()
+  const user = data?.user
   const userName = user?.name
 
   const handleLogout = async () => {
@@ -17,6 +18,8 @@ const Navbar = () => {
   }
 
   const pathname = usePathname()
+
+  
 
   return (
     <div className="border-b px-2">
@@ -67,11 +70,15 @@ const Navbar = () => {
             </ul>}
             {
               user && <div className="flex items-center gap-3">
+                
                 <span className="font-semibold text-green-600">{userName}</span>
                 <Button variant="danger-soft" onClick={handleLogout}>
                   Logout
                 </Button>
               </div>
+            }
+            {
+              isPending && <h1>Loading...</h1>
             }
         </div>
         

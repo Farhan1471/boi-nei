@@ -15,25 +15,28 @@ const Footer = () => {
 
                 {/* Logo and description */}
                 <div>
-                    <h1 className="text-2xl font-bold">Boi Nei</h1>
-                    <p className="text-sm text-gray-400">Your one-stop destination for all things books. Here Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, ipsum.</p>
+                    <h1 className="text-2xl font-bold text-center md:text-left">Boi Nei</h1>
+                    <p className="text-sm text-gray-400 text-center md:text-left">Your one-stop destination for all things books. Here Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, ipsum.</p>
                 </div>
 
                 {/* Contact */}
-                <div className="flex flex-col items-center md:items-start text-gray-400">
-                    <div className="flex gap-2 items-center">
-                        <MdEmail />
-                        <p>contact@boikini.com</p>
-                    </div>
+                <div>
+                    <p className="font-semibold text-sm mb-2 text-center md:text-left">Contact Us</p>
+                    <div className="flex flex-col items-center md:items-start text-gray-400">
+                        <div className="flex gap-2 items-center">
+                            <MdEmail />
+                            <p>contact@boikini.com</p>
+                        </div>
 
-                    <div className="flex gap-2 items-center">
-                        <IoIosCall />
-                        <p>+8801846701079</p>
-                    </div>
-                    
-                    <div className="flex gap-2 items-center">
-                        <FaAddressCard />
-                        <p>Furomon Pahar, Rangamati</p>
+                        <div className="flex gap-2 items-center">
+                            <IoIosCall />
+                            <p>+8801846701079</p>
+                        </div>
+                        
+                        <div className="flex gap-2 items-center">
+                            <FaAddressCard />
+                            <p>Furomon Pahar, Rangamati</p>
+                        </div>
                     </div>
                 </div>
 

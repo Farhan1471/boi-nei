@@ -3,7 +3,7 @@ import BookCard from "./BookCard";
 
 const FeaturedBooks = async () => {
 
-    const res = await fetch('https://boi-nei.vercel.app/data.json');
+    const res = await fetch('https://ame.scratchive.com/data.json');
     const books = await res.json();
     const topBooks = books.slice(0, 4);
 
